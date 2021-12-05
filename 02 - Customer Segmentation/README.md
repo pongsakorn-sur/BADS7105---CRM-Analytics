@@ -1,7 +1,7 @@
 # Customer Segmentation
-[![CLV Dashboard](https://img.shields.io/badge/-Python-blue)](https://github.com/pongsakorn-sur/BADS7105-CRM-Analytics/tree/main/01%20-%20CLV%20Dashboard)
-[![CLV Dashboard](https://img.shields.io/badge/-Google%20Colab-blue)](https://github.com/pongsakorn-sur/BADS7105-CRM-Analytics/tree/main/01%20-%20CLV%20Dashboard)
-[![CLV Dashboard](https://img.shields.io/badge/-K--Means-blue)](https://github.com/pongsakorn-sur/BADS7105-CRM-Analytics/tree/main/01%20-%20CLV%20Dashboard)
+[![CLV Dashboard](https://img.shields.io/badge/-Python-blue)](https://github.com/pongsakorn-sur/BADS7105-CRM-Analytics/tree/main/02%20-%20Customer%20Segmentation)
+[![CLV Dashboard](https://img.shields.io/badge/-Google%20Colab-blue)](https://github.com/pongsakorn-sur/BADS7105-CRM-Analytics/tree/main/02%20-%20Customer%20Segmentation)
+[![CLV Dashboard](https://img.shields.io/badge/-K--Means-blue)](https://github.com/pongsakorn-sur/BADS7105-CRM-Analytics/tree/main/02%20-%20Customer%20Segmentation)
 
 ## 1. Import Dataset
 The supermarket dataset are historical data of sales transactions from year 2006 to 2008 of 2 stores and 6100 customers. It contains total 956574 rows and 22 columns.  
