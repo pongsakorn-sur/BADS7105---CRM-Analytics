@@ -13,7 +13,13 @@ The supermarket dataset are historical data of sales transactions from year 2006
 
 ## 2. Feature Engineering
 Define the feature for clustering model.
-- Average weekly baskets(active weeks only)
+- Total spend
+- Total visit
+- Total SKUs
+- Customer life time(Days)
+- Recency(Total days from last purchase)
+- Average active weekly baskets(Frequency)
+- Average active weekly spending(Monetary)
 - Standard deviation of weekly baskets
 - Average ticket size(Total spend/No. of baskets)
 - Standard deviation of ticket size 
