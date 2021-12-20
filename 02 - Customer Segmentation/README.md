@@ -32,3 +32,5 @@ Define the feature for clustering model.
 - Least visit shop hour
 
 ## 3. Customer Single View
+Generate customer single view to prepare data for use in clustering model. The final features were selected total 13 features.
+
