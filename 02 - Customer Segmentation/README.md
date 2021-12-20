@@ -34,3 +34,7 @@ Define the feature for clustering model.
 ## 3. Customer Single View
 Generate customer single view to prepare data for use in clustering model. The final features were selected total 13 features.
 
+[![CSV DF](https://github.com/pongsakorn-sur/BADS7105-CRM-Analytics/blob/main/02%20-%20Customer%20Segmentation/Customer%20single%20view.png)](https://github.com/pongsakorn-sur/BADS7105-CRM-Analytics/blob/main/02%20-%20Customer%20Segmentation/Customer%20single%20view.png)
+
+## 4. Clustering Model
+
