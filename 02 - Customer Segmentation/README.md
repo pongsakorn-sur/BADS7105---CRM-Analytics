@@ -36,5 +36,22 @@ Generate customer single view to prepare data for use in clustering model. The f
 
 [![CSV DF](https://github.com/pongsakorn-sur/BADS7105-CRM-Analytics/blob/main/02%20-%20Customer%20Segmentation/Customer%20single%20view.png)](https://github.com/pongsakorn-sur/BADS7105-CRM-Analytics/blob/main/02%20-%20Customer%20Segmentation/Customer%20single%20view.png)
 
-## 4. Clustering Model
+## 4. Model Performance
+[![Model performance](https://github.com/pongsakorn-sur/BADS7105-CRM-Analytics/blob/main/02%20-%20Customer%20Segmentation/Model%20Performance.png)](https://github.com/pongsakorn-sur/BADS7105-CRM-Analytics/blob/main/02%20-%20Customer%20Segmentation/Model%20Performance.png)
 
+## 5. KMeans Clustering
+Create KMean model using pycaret and choosing K number of clusters = 6
+
+[![Elbow](https://github.com/pongsakorn-sur/BADS7105-CRM-Analytics/blob/main/02%20-%20Customer%20Segmentation/Elbow.png)](https://github.com/pongsakorn-sur/BADS7105-CRM-Analytics/blob/main/02%20-%20Customer%20Segmentation/Elbow.png)
+[![Silhouette](https://github.com/pongsakorn-sur/BADS7105-CRM-Analytics/blob/main/02%20-%20Customer%20Segmentation/silhouette.png)](https://github.com/pongsakorn-sur/BADS7105-CRM-Analytics/blob/main/02%20-%20Customer%20Segmentation/silhouette.png)
+[![PCA](https://github.com/pongsakorn-sur/BADS7105-CRM-Analytics/blob/main/02%20-%20Customer%20Segmentation/PCA%20Plot.png)](https://github.com/pongsakorn-sur/BADS7105-CRM-Analytics/blob/main/02%20-%20Customer%20Segmentation/PCA%20Plot.png)
+
+## 6. Interpret results and plan for actions
+- Cluster 0 : Non frequent visitors
+- Cluster 1 : The Star
+- Cluster 2 : Visit once in a blue moon
+- Cluster 3 : Potential Star
+- Cluster 4 : Not worth pursuing
+- Cluster 5 : Ignore them!!
+
+[![Action](https://github.com/pongsakorn-sur/BADS7105-CRM-Analytics/blob/main/02%20-%20Customer%20Segmentation/Action.png)](https://github.com/pongsakorn-sur/BADS7105-CRM-Analytics/blob/main/02%20-%20Customer%20Segmentation/Action.png)
