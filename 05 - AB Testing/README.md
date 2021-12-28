@@ -1,1 +1,10 @@
-
+![alt text](https://github.com/pongsakorn-sur/BADS7105-CRM-Analytics/blob/main/05%20-%20AB%20Testing/Image/AB%20Testing-01.jpg)
+![alt text](https://github.com/pongsakorn-sur/BADS7105-CRM-Analytics/blob/main/05%20-%20AB%20Testing/Image/AB%20Testing-02.jpg)
+![alt text](https://github.com/pongsakorn-sur/BADS7105-CRM-Analytics/blob/main/05%20-%20AB%20Testing/Image/AB%20Testing-03.jpg)
+![alt text](https://github.com/pongsakorn-sur/BADS7105-CRM-Analytics/blob/main/05%20-%20AB%20Testing/Image/AB%20Testing-04.jpg)
+![alt text](https://github.com/pongsakorn-sur/BADS7105-CRM-Analytics/blob/main/05%20-%20AB%20Testing/Image/AB%20Testing-05.jpg)
+![alt text](https://github.com/pongsakorn-sur/BADS7105-CRM-Analytics/blob/main/05%20-%20AB%20Testing/Image/AB%20Testing-06.jpg)
+![alt text](https://github.com/pongsakorn-sur/BADS7105-CRM-Analytics/blob/main/05%20-%20AB%20Testing/Image/AB%20Testing-07.jpg)
+![alt text](https://github.com/pongsakorn-sur/BADS7105-CRM-Analytics/blob/main/05%20-%20AB%20Testing/Image/AB%20Testing-08.jpg)
+![alt text](https://github.com/pongsakorn-sur/BADS7105-CRM-Analytics/blob/main/05%20-%20AB%20Testing/Image/AB%20Testing-09.jpg)
+![alt text](https://github.com/pongsakorn-sur/BADS7105-CRM-Analytics/blob/main/05%20-%20AB%20Testing/Image/AB%20Testing-10.jpg)
