@@ -1,7 +1,7 @@
 # Customer Segmentation [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1SsqHH_gb9939e5DapckTBaNF6u04pcJI)
-[![CLV Dashboard](https://img.shields.io/badge/-Python-blue)](https://github.com/pongsakorn-sur/BADS7105-CRM-Analytics/tree/main/02%20-%20Customer%20Segmentation)
-[![CLV Dashboard](https://img.shields.io/badge/-Google%20Colab-blue)](https://github.com/pongsakorn-sur/BADS7105-CRM-Analytics/tree/main/02%20-%20Customer%20Segmentation)
-[![CLV Dashboard](https://img.shields.io/badge/-K--Means-blue)](https://github.com/pongsakorn-sur/BADS7105-CRM-Analytics/tree/main/02%20-%20Customer%20Segmentation)
+[![Customer Segmentation](https://img.shields.io/badge/-Python-blue)](https://github.com/pongsakorn-sur/BADS7105-CRM-Analytics/tree/main/02%20-%20Customer%20Segmentation)
+[![Customer Segmentation](https://img.shields.io/badge/-Google%20Colab-blue)](https://github.com/pongsakorn-sur/BADS7105-CRM-Analytics/tree/main/02%20-%20Customer%20Segmentation)
+[![Customer Segmentation](https://img.shields.io/badge/-K--Means-blue)](https://github.com/pongsakorn-sur/BADS7105-CRM-Analytics/tree/main/02%20-%20Customer%20Segmentation)
 
 
 
