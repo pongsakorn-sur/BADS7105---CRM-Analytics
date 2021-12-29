@@ -1,0 +1,71 @@
+WITH 
+ALL_CUST_YM AS (
+    SELECT *
+    FROM(
+    SELECT DISTINCT CUST_CODE
+    FROM `churn-prediction-model-331409.supermarket.supermarket`
+    WHERE CUST_CODE IS NOT NULL)
+    CROSS JOIN (
+    SELECT DISTINCT FORMAT_DATE('%Y%m', SHOP_DATE) AS YM
+    FROM
+        UNNEST(GENERATE_DATE_ARRAY((
+            SELECT
+            MIN(PARSE_DATE( '%Y%m%d',
+                CAST(SHOP_DATE AS STRING)))
+            FROM
+            `churn-prediction-model-331409.supermarket.supermarket`), (
+            SELECT
+            MAX(PARSE_DATE( '%Y%m%d',
+                CAST(SHOP_DATE AS STRING)))
+            FROM
+            `churn-prediction-model-331409.supermarket.supermarket`), INTERVAL 1 DAY)) AS SHOP_DATE )
+),
+CUST_YM AS (
+    SELECT DISTINCT CUST_CODE, FORMAT_DATE('%Y%m', PARSE_DATE('%Y%m%d',CAST(SHOP_DATE AS STRING))) AS YM
+    FROM `churn-prediction-model-331409.supermarket.supermarket`
+    WHERE CUST_CODE IS NOT NULL
+    ORDER BY CUST_CODE, YM
+),
+CUST_LIFE AS (
+    SELECT 
+        A.CUST_CODE, A.YM, B.LAST_YM, C.MIN_YM,
+        IF(
+            B.YM IS NOT NULL,1,0
+            ) THIS_MONTH,
+        IF(
+            B.LAST_YM IS NOT NULL AND B.LAST_YM=LAG(A.YM) OVER(PARTITION BY A.CUST_CODE ORDER BY A.YM),1,0
+            ) LAST_MONTH,
+        IF(
+            A.YM > C.MIN_YM,1,0
+        ) PUR_BEFORE
+    FROM
+        ALL_CUST_YM A
+    LEFT JOIN (
+        SELECT 
+            CUST_CODE, YM,
+            LAG(YM) OVER(PARTITION BY CUST_CODE ORDER BY YM) LAST_YM,
+        FROM CUST_YM
+        ORDER BY CUST_CODE, YM) B ON A.CUST_CODE = B.CUST_CODE AND A.YM = B.YM
+    LEFT JOIN (SELECT CUST_CODE, MIN(YM) AS MIN_YM FROM CUST_YM GROUP BY CUST_CODE) C ON A.CUST_CODE = C.CUST_CODE
+    ORDER BY A.CUST_CODE, A.YM
+),
+CUST_STATUS AS (
+    SELECT
+        CUST_CODE, YM, LAST_YM, MIN_YM,
+        CASE 
+            WHEN THIS_MONTH=1 AND LAST_MONTH=0 AND PUR_BEFORE=0 THEN 'NEW'
+            WHEN THIS_MONTH=1 AND LAST_MONTH=1 THEN 'REPEAT'
+            WHEN THIS_MONTH=1 AND LAST_MONTH=0 AND PUR_BEFORE=1 THEN 'REACTIVATED'
+            WHEN THIS_MONTH=0 AND PUR_BEFORE=1 THEN 'CHURN'
+        END AS STATUS
+    FROM CUST_LIFE
+)
+
+SELECT
+    PARSE_DATE('%Y%m', CAST(YM AS STRING)) AS YM, STATUS,
+    IF(STATUS='CHURN',-1*COUNT(DISTINCT CUST_CODE), COUNT(DISTINCT CUST_CODE)) AS COUNT
+FROM CUST_STATUS
+WHERE STATUS IS NOT NULL 
+GROUP BY YM, STATUS
+ORDER BY YM, STATUS
+
