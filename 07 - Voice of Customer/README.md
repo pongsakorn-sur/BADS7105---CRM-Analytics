@@ -26,7 +26,7 @@ Top words in each topic.
 [![Top_word](https://github.com/pongsakorn-sur/BADS7105-CRM-Analytics/blob/main/07%20-%20Voice%20of%20Customer/Top_Word.png)](https://github.com/pongsakorn-sur/BADS7105-CRM-Analytics/blob/main/07%20-%20Voice%20of%20Customer/Top_Word.png)
 
 ## 5. Conclusion
-Topic 1 :   คาเฟ่/เบเกอรี่ บรรยากาศดี น่ารัก  
-Topic 2 :   ร้านเก่าแก่รสชาติอร่อย  
-Topic 3 :   ร้าน ชา/ชานมไข่มุก น่าลอง  
-Topic 4 :   ร้าน Local สไตล์บ้านๆน่าลอง
+**Topic 1 :**   คาเฟ่/เบเกอรี่ บรรยากาศดี น่ารัก  
+**Topic 2 :**   ร้านเก่าแก่รสชาติอร่อย  
+**Topic 3 :**   ร้าน ชา/ชานมไข่มุก น่าลอง  
+**Topic 4 :**   ร้าน Local สไตล์บ้านๆน่าลอง
